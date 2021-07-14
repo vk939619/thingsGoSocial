@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://bootstrapcreative.com/wp-bc/wp-content/themes/wp-bootstrap/codepen/bootstrapcreative.js?v=5"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+
+            <!-- <div class="alert alert-warning text-center my-4">
+                Looking for a more detailed example? Checkout the <a href="https://bootstrapcreative.com/shop/bootstrap-4-toolkit/" target="_blank">Bootstrap 4 Templates Kit</a>
+            </div> -->
+            <form action="/register" method="POST">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+                        <div class="row">
+                            <div class="col text-center">
+                                <h1>Register</h1>
+
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col mt-4">
+                                <input type="text" class="form-control" placeholder="Name" name="name">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col mt-4">
+                                <input type="text" class="form-control" placeholder="enter name of subjects" name="subjects">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-4">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="contact" name="contact">
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-4">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="class" name="class">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="year" name="year">
+                            </div>
+                        </div>
+                        <div class="row justify-content-start mt-4">
+                            <div class="col">
+                                <!-- <div class="form-check">
+                                <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input">
+                      I Read and Accept <a href="https://www.froala.com">Terms and Conditions</a>
+                    </label>
+                            </div> -->
+
+                                <button type="button" onclick="showField()">linked with socity?</button>
+                                <input type="hidden" id="socity" placeholder="enter socity name(if more than one than seperate them by comma" name="socities">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-4" id="bttn">Submit</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        function showField() {
+            var y = document.getElementById("socity");
+            y.type = "text";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
